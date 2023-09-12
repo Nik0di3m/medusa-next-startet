@@ -8,7 +8,7 @@ module.exports = {
     serverActions: true
   },
   images: {
-    formats: ['image/avif', 'image/webp', 'image/png', 'image/jpg', 'image/jpeg'],
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
