@@ -8,7 +8,7 @@ module.exports = {
     serverActions: true
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/avif', 'image/webp', 'image/png', 'image/jpg', 'image/jpeg'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -18,6 +18,11 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'medusa-server-testing.s3.amazonaws.com',
+        pathname: '/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'medusa-admin.nextlevellab.pl',
         pathname: '/**'
       }
     ]
